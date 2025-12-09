@@ -12,9 +12,9 @@
     <header>
         <h1>Bienvenido a Mi Blog</h1>
         <nav> <!-- Navegacion basica -->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Contacto</a></li>
+                <a href="#inicio">Inicio</a> |
+                <a href="#sobre-mi">Sobre mí</a> |
+                <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
@@ -40,10 +40,25 @@
 
         <p> Mis redes sociales son: </p>
         <ol> <!-- Lista ordenada, con numeros -->
-            <li> Twitter:  <a href="https://twitter.com/ArturoCantu" >Twitter</a></li> <!-- Etiqueta de anclaje para hipervinculo -->
+            <li> Twitter:  <a href="https://twitter.com/ArturoCantu" >Twitter <span>😁</span></a></li> <!-- Etiqueta de anclaje para hipervinculo -->
             <li> Instagram: <a href="https://www.instagram.com/arturocantu/" >Instagram</a></li>
             <li> LinkedIn: <a href="https://www.linkedin.com/in/arturo-cantu/" >LinkedIn</a></li>
         </ol>
     </div>
+<div id ="contacto">
+    <form action="#" method="post">
+        <h2>Contáctame</h2>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+    <footer>
+        <p>© 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
