@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<!-- Esta es la forma en que se comenta. -->
+<body>
+    <header>
+        <h1>Bienvenido a Mi Blog</h1>
+        <nav> <!-- Navegacion basica -->
+                <a href="#inicio">Inicio</a> |
+                <a href="#sobre-mi">Sobre mí</a> |
+                <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="inicio" class="star"> <!-- class lleva ese estilo a todo lo que esté en ese bloque -->
+        <section>
+            <h2>Mi nombre es Arturo Cantú</h2>
+            <p>Estoy aprendiendo a usar HTML.</p>
+            <img src="./src/images/sergio-perez-2024.png" alt="Fotografia personal"> <!-- Alt agrega texto que aparece si no carga img -->
+        </section>
+    </main>
+    <div id ="sobre-mi">
+
+        <h2>Sobre mí</h2>
+        <p>Me gusta aprender cosas nuevas y entender como funcionan las cosas.</p>
+        <br> <!-- Salto de linea en blanco-->
+        <p>Mis pasatiempos favoritos son:.</p>
+        <ul> <!-- Lista desordenada, con viñetas -->
+            <li>Leer libros de ciencia ficción.</li>
+            <li>Hacer ciclismo en la naturaleza.</li>
+            <li>Dormir.</li>
+            <li>Jugar videojuegos.</li>
+        </ul>
+
+        <p> Mis redes sociales son: </p>
+        <ol> <!-- Lista ordenada, con numeros -->
+            <li> Twitter:  <a href="https://twitter.com/ArturoCantu" >Twitter <span>😁</span></a></li> <!-- Etiqueta de anclaje para hipervinculo -->
+            <li> Instagram: <a href="https://www.instagram.com/arturocantu/" >Instagram</a></li>
+            <li> LinkedIn: <a href="https://www.linkedin.com/in/arturo-cantu/" >LinkedIn</a></li>
+        </ol>
+    </div>
+<div id ="contacto">
+    <form action="#" method="post">
+        <h2>Contáctame</h2>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+    <footer>
+        <p>© 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
