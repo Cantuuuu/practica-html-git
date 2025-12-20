@@ -6,13 +6,7 @@
     <title>Mi blog</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="./src/icons/f1icon.png">
-    <style>
-        .hobies{
-            font-weight: bold;
-            color: red;
-            text-decoration: underline;
-        }
-    </style>
+
 </head>
 
 <!-- Esta es la forma en que se comenta. -->
@@ -38,7 +32,7 @@
         <h2>Sobre mí</h2>
         <p>Me gusta aprender cosas nuevas y entender como funcionan las cosas.</p>
         <br> <!-- Salto de linea en blanco-->
-        <p class="hobies">Mis pasatiempos favoritos son:.</p>
+        <p class="hobies">Mis pasatiempos favoritos son:</p>
         <ul> <!-- Lista desordenada, con viñetas -->
             <li>Leer libros de ciencia ficción.</li>
             <li>Hacer ciclismo en la naturaleza.</li>
@@ -62,9 +56,37 @@
         <input type="email" id="email" name="email" required><br>
         <label for="mensaje">Mensaje:</label><br>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-        <input type="submit" value="Enviar">
+        <button type="submit" value="Enviar"> Enviar</button>
     </form>
 </div>
+    <section id="box-model-demo">
+      <h2> Demo: Box Model</h2>
+        <div class="box-demo">
+            Soy una caja de demostración del modelo de caja.
+        </div>
+    </section>
+
+    <section id="box-sizing-demo">
+      <h2> Demo: Box Sizing</h2>
+        <div class="box-cb">
+            Soy una caja de demostración del box sizing.
+        </div>
+        <div class="box-bb">
+            border-box
+        </div>
+
+    </section>
+
+    <section id="tarjeta-demo">
+        <h2>Tarjeta de Checo Pérez</h2>
+        <div class="card">
+            <img src="./src/images/sergio-perez-2024.png" alt="Foto" class="card-img">
+            <h3 class="card-title">Tarjeta</h3>
+            <p class="card-body">Uso de padding, border y margin usando box-sizing</p>
+            <button class="card-btn" type="button">Leer más</button>
+        </div>
+    </section>
+
     <footer>
         <p>© 2025 Mi Blog. Todos los derechos reservados.</p>
     </footer>
