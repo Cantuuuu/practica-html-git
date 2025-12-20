@@ -1,6 +1,6 @@
 body {
     background-color: #eef6fb;
-    font-family: "Arial", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #1a1a1a;
     margin: 0;
     padding: 0;
@@ -12,6 +12,8 @@ header, footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Estilo específico para la clase star */
 
 .star {
     font-family: "arial", sans-serif;
@@ -26,6 +28,7 @@ img {
     margin: 0 auto;
     display: block;
 }
+/* Estilo específico para las secciones sobre-mi y contacto, por ID */
 
 main, #sobre-mi, #contacto {
     padding: 20px;
@@ -51,6 +54,14 @@ input[type="submit"] {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+/* Estilo para las etiquetas p */
+p{
+    font-size: 18px;
+    color : #333333;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 nav a {
