@@ -165,11 +165,14 @@ button:hover {
     display: flex;
     gap: 24px;
     justify-content: center;
+    align-items: stretch; /* Buscando que tengan la misma altura */
     flex-wrap: wrap;
 }
 
 .card {
-    position: relative; /* permite posicionar badge dentro */
+    position: relative;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;
     max-width: 360px;
@@ -213,6 +216,7 @@ button:hover {
     color: #555;
     font-size: 0.95rem;
     line-height: 1.5;
+    flex-grow: 1; /* Empuja el botón hacia abajo */
 }
 
 .card-btn {
